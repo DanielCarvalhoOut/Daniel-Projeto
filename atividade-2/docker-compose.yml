@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    container_name: codecraft-labs
+    ports:
+      - "8092:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
